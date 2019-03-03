@@ -1,0 +1,16 @@
+/* add container in header component */
+.header-container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+/* dropdown-content */
+.dropdown-content{
+position: relative;
+top: -60px;
+height: 400px;
+}
+
+.content-padding{
+    padding-left:10%;
+    padding-right:10%;
+}
