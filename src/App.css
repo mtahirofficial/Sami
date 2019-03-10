@@ -1,3 +1,6 @@
+.row{
+    margin-bottom:0; 
+}
 /* add container in header component */
 .header-container{
     padding-left: 5%;
@@ -5,12 +8,24 @@
 }
 /* dropdown-content */
 .dropdown-content{
-position: relative;
-top: -60px;
+top: -50px;
 height: 400px;
+width: 300px !important;
 }
 
 .content-padding{
     padding-left:10%;
     padding-right:10%;
+}
+
+/* form background image */
+.formimage{
+    background-image: url("images/background.jpg");
+   background-position:center;
+   background-size: 100% ;
+}
+/* product detail */
+.container-product{
+    padding-left: 5%;
+    padding-right: 5%;
 }

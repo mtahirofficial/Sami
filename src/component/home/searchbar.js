@@ -1,17 +1,14 @@
 import React,{Component} from "react";
-import {Row,Input, Button, Icon} from 'react-materialize';
 import M from 'materialize-css'; 
 class SearchBar extends Component{
-
-    render(){
-        document.addEventListener('DOMContentLoaded', function() {
+    componentDidMount=()=>{
             var elems = document.querySelectorAll('select');
              M.FormSelect.init(elems);
-          });
-        
+    }
+    render(){
     return (
         <div>
-             <Row>
+             <div className="row">
                  <div className="container">
                  <from>
              <div className="input-field col s5 m3">
@@ -29,15 +26,23 @@ class SearchBar extends Component{
       <option value="Toys, Kids & Baby">Toys, Kids & Baby</option>
       <option value="Sports & Outdoors<">Sports & Outdoors</option>
       <option value="Beauty & Health, Hair">Beauty & Health, Hair</option>
-      <option value="Automobiles & Motorcycles">Automobiles & Motorcycles</option>
+      <option value="Automobiles $ Motorcycles">Automobiles & Motorcycles</option>
       <option value="Home Improvement, Tools">Home Improvement, Tools</option>
     </select>
     </div>
-    <Input  s={5} m={4} label="search" type="search" />
-    <Button s={2} m={2} className="blue waves-effect waves-light btn-large" ><Icon medium>search</Icon></Button>
-    </from>
+    <div className="col m9 s7"> 
+    <div className="row">
+    <div class="input-field col m10 s8">
+          <input type="text" id="autocomplete-input" class="autocomplete"/>
+          <label for="autocomplete-input">serach</label>
+        </div>
+    <button  className="blue waves-effect waves-light btn-large col m1 s4" ><i className= "material-icons medium" >search</i></button>
     </div>
-            </Row>
+    </div>
+    </from>
+
+    </div>
+            </div>
         </div>
         
     );

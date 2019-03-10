@@ -2,6 +2,7 @@ import React,{Component} from "react";
 import Sliderbar from './slider';
 import SearchBar from './searchbar';
 import Content from './content';
+import UpFooter from '../footer/upfooter';
 class Home extends Component{
 
     render(){
@@ -9,6 +10,7 @@ class Home extends Component{
            <Sliderbar/>
            <SearchBar/>
            <Content/>
+           <UpFooter />
         </div>);
     }
 }
