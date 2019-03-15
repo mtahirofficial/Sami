@@ -22,7 +22,7 @@ class Header extends Component{
         {/* dropdown btton  desktop*/}
         <li> <a className='dropdown-trigger' href='#!' data-target='dropdown1'>CATEGORY<i className=" material-icons right">arrow_drop_down</i></a></li>
         <li><Link to="/contact">CONTACT US</Link></li>
-        <li><Link to="/basket"><i className="material-icons">shopping_cart</i></Link></li> 
+        <li><Link to="/cart"><i className="material-icons">shopping_cart</i></Link></li> 
         <li><Link to="/wishlist"><i className="material-icons left">favorite</i>WishList</Link></li> 
         <li><Link to="/login"><i className="material-icons left">person</i>Login</Link></li>
   </ul>

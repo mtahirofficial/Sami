@@ -1,4 +1,5 @@
 import React,{Component} from "react";
+import Header from '../navbar/header';
 import Sliderbar from './slider';
 import SearchBar from './searchbar';
 import Content from './content';
@@ -7,6 +8,7 @@ class Home extends Component{
 
     render(){
         return(<div>
+             <Header/>
            <Sliderbar/>
            <SearchBar/>
            <Content/>

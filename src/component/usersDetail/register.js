@@ -1,8 +1,11 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom';
+import NavBar from '../navbar/navbar';
 class Register extends Component{
     render(){
-        return(<div className="grey lighten-2">
+        return(<div>
+          <NavBar/>
+        <div className="grey lighten-2">
                 <div className="section"></div>
                 <div className="container">
                 <h3>ecomm</h3>
@@ -54,6 +57,7 @@ class Register extends Component{
                 </div>
                 
                 </div>
+        </div>
         </div>);
     }
 }

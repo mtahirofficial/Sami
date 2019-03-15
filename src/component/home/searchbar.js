@@ -8,7 +8,7 @@ class SearchBar extends Component{
     render(){
     return (
         <div>
-             <div className="row">
+             <div className="row grey lighten-2">
                  <div className="container">
                  <from>
              <div className="input-field col s5 m3">

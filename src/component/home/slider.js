@@ -7,12 +7,14 @@ class Sliderbar extends Component{
   componentDidMount=()=>{
    
     var elems = document.querySelectorAll('.slider');
-    M.Slider.init(elems);
+    M.Slider.init(elems,{
+      indicators:false,
+    });
   }
     render(){
      
         return(<div>
-<div className="slider">
+<div className="slider ">
     <ul className="slides">
       <li>
         <img src={a} alt="slide 1"/>

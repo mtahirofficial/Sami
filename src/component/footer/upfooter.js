@@ -4,7 +4,8 @@ import {Link} from 'react-router-dom';
 class UpFooter extends Component{
 
     render(){
-        return(<div className="container">
+        return(<div className=" grey lighten-2">
+        <div className="container ">
          <div className="row">
          <div className="col s12 m4">
          <ul>
@@ -48,7 +49,7 @@ class UpFooter extends Component{
          </div>
          </div>
 
-         
+         </div>
         </div>);
     }
 }
