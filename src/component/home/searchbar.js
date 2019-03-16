@@ -12,8 +12,8 @@ class SearchBar extends Component{
                  <div className="container">
                  <from>
              <div className="input-field col s5 m3">
-    <select >
-      <option value="" disabled selected>Choose your option</option>
+    <select defaultValue="" >
+      <option value="" disabled selected>Choose your Category</option>
       <option value="All Category">All Category</option>
       <option value="Women’s Clothing">Women’s Clothing</option>
       <option value="Men’s Clothing">Men’s Clothing</option>

@@ -8,10 +8,12 @@ import Cart from './component/cart/cart';
 //admin componet
 import AdminLogin from './component/admin/adminlogin';
 import DashBoard from './component/admin/dashboard';
+import AddProduct from './component/admin/addproduct';
 
 import './App.css';
 
 import {Switch,BrowserRouter,Route} from "react-router-dom";
+import admin from './component/admin/admin';
 class App extends Component {
   render() {
     return (
@@ -24,6 +26,9 @@ class App extends Component {
          <Route path="/cart" component={Cart}/>
          <Route path="/admin-login" component={AdminLogin}/>
          <Route path="/dashboard" component={DashBoard}/>
+         <Route path="/add-product" component={AddProduct}/>
+         <Route path="/admin/:name" component={admin}/>
+          <Route path="/All-Category" component={Home}/>
           <Route path="/" component={Home}/>
         </Switch>
         <Footer/>
