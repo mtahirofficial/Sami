@@ -21,22 +21,16 @@ addProduct =(e)=>{
 
     let subCategoryName = this.refs.pSubCategory.value.trim();
     let productCategory =this.refs.category.value;
-    //   let productImage = this.refs.productImage.files;
-      let fd =new FormData(this.refs.myform)
-    //   fd.append('myimage', productImage)
-      console.log(fd)
+    let fromData =new FormData(this.refs.myform);
     // create product obj
     let singelProduct ={pName:productName,pColor:productColor,pSize:productSize,sCategory:subCategoryName,pCategory:productCategory}
-    fd.append('data',JSON.stringify(singelProduct));
+    fromData.append('data',JSON.stringify(singelProduct));
     // feacth api use send data to the server
     let  options ={
         method: 'POST',
-        body:fd,
-        
+        body:fromData,  
     }
-
-
-        fetch(' http://localhost:8000/addProduct',options)
+        fetch('/addProduct',options)
         .then((res) => res.text())
                 .then((message) => console.log(message))
                 .catch((error) => console.log(error))
@@ -90,7 +84,7 @@ addProduct =(e)=>{
 
         <div className="file-field input-field">
       <div className="btn">
-        <input type="file" multiple ref="productImage" name="productImage"/>
+        <input type="file" multiple name="productImage"/>
         <span>File</span>
       </div>
       <div className="file-path-wrapper">
