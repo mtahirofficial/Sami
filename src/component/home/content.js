@@ -15,11 +15,11 @@ class Content extends Component{
             {arry.map((value,index)=>{
                 return (<div key={index} className="col m4 s12">
                  <div className="card">
-        <div className="card-image">
+        {/* <div className="card-image">
               <Link to='/product-details'>
           <img src={image} height="150"/>
           </Link>
-        </div>
+        </div> */}
         <div className="card-content">
         <span >Card Title</span>
         </div>
